@@ -54,7 +54,7 @@ Alternatively, you can to configure/export the `LD_LIBRARY_PATH` environment var
 ___
 # Usage
 
-There are several manners to use the **Echo** library, see the project's wiki to learn all about of it.
+There are several manners how to use the **Echo** library, see the project's wiki to learn all about of it.
 ___
 # Todo
 

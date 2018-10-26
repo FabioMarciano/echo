@@ -15,7 +15,7 @@
 ___
 # Version
 
-See the version file at root of this project.
+See the **version** file at project's folder.
 ___
 # Description
 
@@ -34,27 +34,20 @@ ___
   ``` shell
   $ make
   ```
-The command above creates the *bin* folder with the following files:
+The command above creates the *bin* folder and the following files:
 
   * A static library named **libecho.a**
   * A shared library named **libecho.so.1.0.0** <sup>1</sup>
-  * A symbolic link named **libecho.so.1** <sup>1</sup> that points to **libecho.so.1.0.0** <sup>1</sup>
-  * A symbolic link named **libecho.so** that points to **libecho.so.1** <sup>1</sup>
-___
-(1) Considering the following to the version:
-  * major = 1
-  * minor = 0
-  * patch = 0
+  * A symbolic link named **libecho.so.1** <sup>1</sup> pointing to **libecho.so.1.0.0** <sup>1</sup>
+  * A symbolic link named **libecho.so** pointing to **libecho.so.1** <sup>1</sup>
 
-The __major__, __minor__ and __patch__ values are stored in the **version** file, located at project's root with the format: `major.minor.patch`.
+(1) Considering the version value 1.0.0:
 ___
-The **\*.so\*** files must be moved to the */usr/lib* or your equivalent system folder in order to be used.
-
-Alternatively, you can to configure/export the `LD_LIBRARY_PATH` environment variable with the path of the library *bin* folder and point it at the compiling line with the `-L$LD_LIBRARY_PATH` and `-lecho` flags.
+For more details about the use of static and shared libraries, please refer to the project's wiki.
 ___
 # Usage
 
-There are several manners how to use the **Echo** library, see the project's wiki to learn all about of it.
+There are several manners of how to use the **Echo** library, please refer to the project's wiki to learn all about it.
 ___
 # Todo
 

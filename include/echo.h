@@ -29,7 +29,7 @@
 		#ifndef __SOF__
 			#define __SOF__	extern "C" {
 		#endif
-		#ifndef
+		#ifndef __EOF__
 			#define __EOF__ }
 		#endif
 	#else
@@ -57,7 +57,7 @@
 	/**
 	 * Echo main structure
 	 */
-	struct {
+	struct __echo__ {
 		int level;
 
 		struct {
@@ -83,7 +83,9 @@
 		void (*warning)(const char *, ...);
 		void (*error)(const char *, ...);
 
-	} __echo__;
+	};
+
+	struct __echo__ __echo__;
 
 	/**
 	 * Echo stdout and stderr stream pointer
